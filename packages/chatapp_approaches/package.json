@@ -1,0 +1,21 @@
+{
+  "name": "breadboard_chatapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prompt_breadboard.js",
+  "scripts": {
+    "test": "node prompt_breadboard.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-labs/breadboard": "^0.6.0",
+    "@google-labs/core-kit": "^0.1.2",
+    "@google-labs/llm-starter": "^0.3.0",
+    "@google-labs/palm-kit": "^0.0.1",
+    "@pinecone-database/pinecone": "^2.0.1",
+    "@types/node": "^20.10.3",
+    "dotenv": "^16.3.1"
+  }
+}
