@@ -3,12 +3,13 @@ import { config } from "dotenv";
 import { Board } from "@google-labs/breadboard";
 import { Starter } from "@google-labs/llm-starter";
 import { PaLMKit } from "@google-labs/palm-kit";
-// import { Pinecone } from "@google-labs/pinecone-kit";
 import { Pinecone } from '@pinecone-database/pinecone';
-
-
+import { fs } from "fs";
+const filePath = 'train.csv';
 
 config();
+const csvContent = fs.readFileSync(filePath, 'utf-8');
+console.log(csvContent)
 
 const board = new Board();
 const starter = board.addKit(Starter);
@@ -29,6 +30,9 @@ const embed = palm
 board.input().wire(
     "say->text", embed
 ).wire("say->", output)
+
+
+
 
   const result = await board.runOnce({
     say: "Hi, how are you?",

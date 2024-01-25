@@ -12,7 +12,7 @@
   "dependencies": {
     "@google-labs/breadboard": "^0.6.0",
     "@google-labs/core-kit": "^0.1.2",
-    "@google-labs/llm-starter": "^0.3.0",
+    "@google-labs/llm-starter": "^0.3.1",
     "@google-labs/palm-kit": "^0.0.1",
     "@pinecone-database/pinecone": "^2.0.1",
     "@types/node": "^20.10.3",
