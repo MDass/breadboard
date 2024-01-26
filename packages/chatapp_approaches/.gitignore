@@ -2,3 +2,5 @@
 node_modules/
 sr-project/
 create_finetuned/client_secret.json
+package.json
+package-lock.json
