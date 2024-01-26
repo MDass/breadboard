@@ -10,12 +10,14 @@ const USER_QUESTION = "What is diabetes?"
 
 config();
 
+// Board for embedding
 const board1 = new Board();
 const palm1 = board1.addKit(PaLMKit);
 const input1 = board1.input();
 const output1 = board1.output();
 const starter1 = board1.addKit(Core);
 
+// Board for generating text
 const board2 = new Board();
 const palm2 = board2.addKit(PaLMKit);
 const input2 = board2.input();
